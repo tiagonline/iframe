@@ -21,4 +21,4 @@ dependencies:
    - bundle install
 test:
  override:
-   - cd cucumber; cucumber
+   - cd cucumber; cucumber -p firefox -p qa

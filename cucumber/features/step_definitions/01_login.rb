@@ -9,6 +9,7 @@ end
 
 Quando(/^Clicar em Logar$/) do
   page.find(:xpath, "//input[@type='submit'][@name='save']").click
+  #native.send_keys [:control, 'p']
 end
 
 Entao(/^o meu Login e efetuado com sucesso$/) do

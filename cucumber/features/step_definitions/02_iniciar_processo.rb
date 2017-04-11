@@ -4,12 +4,12 @@ end
 
 Quando(/^eu clicar no link Iniciar Processo de Contratação de Materiais e Serviços$/) do
   page.find(:xpath, "//a[text()='Iniciar Processo de Contratação de Materiais e Serviços']").click
+  sleep 1
 end
 
 Entao(/^clico em Iniciar Processo$/) do
   resultado = find(:xpath, "//h2[text()='Iniciar Processo de Contratação de Materiais e Serviços']").text
   expect(resultado).to eq  "Iniciar Processo de Contratação de Materiais e Serviços"
-  sleep 1
 
   # aqui entra no frame que está o elemento do botão Iniciar Processo
   page.driver.browser.switch_to.frame 1
