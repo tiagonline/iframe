@@ -1,7 +1,7 @@
 Entao(/^eu clico na atividade Elaborar ou Revisar Minuta de PRD ou PRCA$/) do
   page.find(:xpath, "//input[@type='text'][@name='search']").set($protocolo).native.send_keys [:enter]
   page.find(:xpath, "//a[text()='Elaborar ou Revisar Minuta de PRD ou PRCA']").click
-  sleep 2
+  sleep 1
 end
 
 Dado(/^que eu estou dentro da atividade Elaborar ou Revisar Minuta de PRD ou PRCA$/) do
@@ -16,7 +16,7 @@ Quando(/^preencho todos os dados da tela Elaborar ou Revisar Minuta de PRD ou PR
   # preenche campo de select
   # campo Análise PP/AP:
   page.all('div[data-viewid$=Select1] input')[1].set("Necessita análise da PP/AP")#.native.send_keys [:tab, :tab, :enter]
-  sleep 3
+  sleep 1
 end
 
 Entao(/^clico em Encerrar Tarefa da tela Elaborar ou Revisar Minuta de PRD ou PRCA$/) do

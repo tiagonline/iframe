@@ -11,7 +11,7 @@ end
 
 Entao(/^eu clico na atividade Cadastrar Demanda$/) do
   page.find(:xpath, "//a[text()='Cadastrar Demanda - CRD/CRCA Diversas']").click
-  sleep 2
+  sleep 1
 end
 
 Dado(/^que eu estou dentro da atividade Cadastrar Demanda \- CRD\/CRCA Diversas$/) do
@@ -43,11 +43,10 @@ Quando(/^preencho todos os dados da tela Cadastrar Demanda \- CRD\/CRCA Diversas
       find('div[data-binding$=detalhesAssunto] textarea').set(Faker::Lorem.word)
       find('div[data-binding$=assunto] input').set(Faker::Lorem.word)
       find('div[data-binding$=valorTotal] input').set(Faker::Base.numerify("###########"))
-      sleep 2
+      sleep 1
 end
 
 Entao(/^clico em Confirmar Cadastro da tela Cadastrar Demanda \- CRD\/CRCA Diversas$/) do
   click_button "Confirmar Cadastro"
   click_button "Confirmar"
-  sleep 5
 end

@@ -18,15 +18,16 @@ Entao(/^clico em Iniciar Processo$/) do
   # entra no iframe e busca o número do protocolo
   within_frame('_bpmEditor_0_iframe') do
     $protocolo = find('div').find('font').text
-    puts $protocolo
+    puts "Protocolo: " + $protocolo
   end
-  # debug para correr entre as divs do frame, gambiarra
+  # debug para correr entre as divs do frame e achar o ultimo botão para clicar, gambiarra
   page.driver.browser.switch_to.frame 1
     page.all('div').each do |i|
       #puts i.text
     end
   click_button
 
+  #find('div[data-viewid$=Button2] button').click
   # Essa linha faz sair do frame acima
   #page.driver.browser.switch_to.default_content
 

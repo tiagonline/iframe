@@ -1,7 +1,7 @@
 Entao(/^eu clico na atividade Consolidar e Coletar Assinaturas na PRD ou PRCA$/) do
   page.find(:xpath, "//input[@type='text'][@name='search']").set($protocolo).native.send_keys [:enter]
   page.find(:xpath, "//a[text()='Consolidar e Coletar Assinaturas na PRD ou PRCA']").click
-  sleep 2
+  sleep 1
 end
 
 Dado(/^que eu estou dentro da atividade Consolidar e Coletar Assinaturas na PRD ou PRCA$/) do

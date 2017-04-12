@@ -3,7 +3,7 @@
 @hooks_meutrabalho
 @hooks_login
 @hooks_iniciar_processo
-@iniciarprocesso
+@teste2
 
 Funcionalidade: Iniciar Processo de Contratação de Materiais e Serviços
 

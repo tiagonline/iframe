@@ -1,5 +1,6 @@
 #language: pt
 
+@teste7
 Funcionalidade: Atividade Consolidar e Coletar Assinaturas na PRD ou PRCA
 
 Eu, como usuário do PCMS

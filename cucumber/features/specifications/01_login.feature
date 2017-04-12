@@ -1,6 +1,7 @@
 #language: pt
 
 @hooks_login
+@teste1
 @login
 
 Funcionalidade: Login PCMS
